@@ -38,7 +38,7 @@
       <section class="practice">
         <header class="section-hd">
           <span class="section-title-l"></span>
-          <h2 class="section-title">当前工作</h2>
+          <h2 class="section-title">Experience</h2>
           <span class="section-title-r"></span>
         </header>
         <div class="section-bd">
@@ -61,7 +61,7 @@
       <section class="practice">
         <header class="section-hd">
           <span class="section-title-l"></span>
-          <h2 class="section-title">以往工作</h2>
+          <h2 class="section-title">Experience</h2>
           <span class="section-title-r"></span>
         </header>
         <div class="section-bd">
@@ -81,7 +81,7 @@
     <section class="skill">
       <header class="section-hd work2-title">
         <span class="section-title-l"></span>
-        <h2 class="section-title">以往工作</h2>
+        <h2 class="section-title">Experience</h2>
         <span class="section-title-r"></span>
       </header>
       <div class="content-left">
@@ -165,12 +165,12 @@ export default defineComponent({
   },
   setup(){
     const baseInfo = reactive({
-      name: '孟宪邦',
-      job: 'Web前端工程师',
+      name: 'Xianbang Meng',
+      job: 'Front-End Engineer',
       infoLeft: [
-        '男 / 1995.02',
-        '天津师范大学 / 软件工程',
-        '本科 / 统招 / 全日制 / 学信网可查 / 2018年毕业'
+        'Male / Feb 1995',
+        'Tianjin Normal University / Software Engineering',
+        ' Undergraduate / Graduated in 2018'
       ],
       infoRight:[
         {
@@ -186,101 +186,81 @@ export default defineComponent({
       ]
     })
     const nowWorkInfo = reactive([{
-      name:'零氪科技（天津）有限公司',
-      time: '2021.3 - 至今',
+      name:'LinkDoc Co., Ltd',
+      time: 'Mar 2021 - Present',
       infoList:[
-        '前端工程师（大数据技术部）',
-        '部门主要业务是医疗大数据，专注于肿瘤等重大疾病领域，为患者和生命科学公司、医疗机构、保险机构、行政监管部门等产业各方，提供大数据一站式解决方案',
-        '主要负责日常项目迭代，公司Lego组件库维护',
+        'Front-End Engineer (BigData Technology Department)',
+        'The main business of the department is medical big data, focusing on major diseases such as tumors, providing one-stop big data solutions for patients and life science companies, medical institutions, insurance institutions, administrative supervision departments and other industrial parties',
+        "Mainly responsible for project iteration, maintenance of the company's Lego component library",
         [
 
-          '基础架构 Vue3 + Less + @vue/cli + typescript + eslint',
-          'UI框架使用的是ant-design-vue@2.X',
-          '录入页重构',
+          'Scientific research integration platform',
           [
-            '根据CRF模型动态生成表单',
-            '优化点位数据结构，以提升点位的查询效率',
-            '对录入整体流程进行梳理，从代码级别对组件间的关系进行解耦',
-            '开发点位自动计算功能',
+            'Dynamically generate forms from CRF models',
+            'Optimize point data structure to improve point query efficiency',
+            'Sort out the overall input process, and decouple components from the code level',
+            'Develop automatic point calculation',
             [
-              '根据配置的公式动态计算相关点位的结果',
-              '支持跨表单自动计算'
-            ]
-          ],
-          'Lego组件库维护',
-          [
-            'v-loading指令开发',
-            [
-              '提供类似a-spin组件的功能',
+              'Dynamically calculate the results of related points according to the configured formula',
+              'Support automatic calculation from another forms'
             ],
-            'EventPublisher工具类开发',
+            'Technology Stack: Vue3, Less, @vue/cli, TypeScript, ES-Lint'
+          ],
+          'Lego component library maintenance',
+          [
+            'Develop v-loading directive',
+            'Develop EventPublisher utils class',
             [
-              '用于整体项目的解耦而开发的事件订阅工具',
-              '支持跨页广播'
+              'An event subscription tool developed for the decoupling of the overall project',
+              'Supports publish event across pages'
             ],
           ],
-          '登陆服务接入',
+          'Login service Maintenance',
           [
-            '根据部署环境需要切换不同的登录服务',
-            '优化docker启动脚本',
+            'Switch between different login services according to the needs of the deployment environment',
+            'Optimize the docker startup script',
           ],
-          '商业化项目维护',
+          'Gensci project maintenance',
           [
-            '维护金赛项目日常的迭代需求',
-            '迁移技术栈，由React迁移至Vue',
-          ],
-          'Docker',
-          [
-            '掌握Docker基本操作',
-            '公司使用docker部署研发测试等环境',
-          ],
-          '涉及技术栈:',
-          [
-            'Vue3',
-            '@vue/cli',
-            'webpack',
-            'Echarts',
-            'antv',
-            'antdv'
+            'Maintain the iterative requirements',
+            'Migration technology stack, from React to Vue',
+            'Technology Stack: React, Redux, TypeScript'
           ]
         ],
       ]
     }])
     const historyWorks = reactive([
       {
-        name:'旅悦（北京）信息技术有限公司',
-        time:'2019.11 - 2021.03',
+        name:'TripMod Co., Ltd',
+        time:'Nov 2019 - Mar 2021',
         infoList:[
-          '前端开发工程师',
-          '从0到1搭建公司内部的BI平台，维护PMS、悦盟及业务组件库',
+          'Front-End Engineer',
+          `Build the company's internal BI platform from 0 to 1, maintain PMS, Yuemeng and business component libraries`,
           [
-            'BI-Matrix（可视化报表平台）',
+            'BI-Matrix (Visualization platform)',
             [
-              '负责开发环境的构建和优化,整体开发流程的优化、项目底层逻辑的编写、难点功能的预研和初稿实现。',
-              '从需求调研、参与设计到进行项目开发、可视效果优化的全流程跟进，实现了可视化平台从0到1的过程',
-              '项目特色:',
+              'Responsible for the construction and optimization of the development environment, the optimization of the overall development process, the writing of the underlying logic of the project, the pre-research and first-draft implementation of difficult functions.',
+              'The whole process of follow-up from demand research, participation in design to project development and visual effect optimization has realized the process of visualization platform from 0 to 1',
+              'Project features:',
               [
-                '将权限映射为资源树，可将权限精细到按钮级，且易于维护。',
-                '以百分比的形式对组件进行渲染，根据不同尺寸和分辨率的设备做了展示优化',
+                'Mapping permissions as a resource tree enables granular permissions down to the button level and is easy to maintain.',
+                'Render components in percentage form, and optimize the display according to devices of different sizes and resolutions',
               ],
-              'Dva Bug排查，解决了Dva在重新挂在model时state未被初始化的问题',
-              '涉及技术栈:',
-              [
-                'Dva', 'React', 'TypeScript', 'Es-Lint', 'Sass'
-              ]
+              'Solved the problem of Dva that the state is not initialized when Dva is recreate on the model',
+              'Technology Stack: Dva, React, TypeScript, Es-Lint, Sass'
             ],
-            '业务组件库',
+            'Business Component Library',
             [
-              '该组件库封装了集团各系统内常⽤组件，并抽象了相应的业务逻辑。以缩短各系统的开发时间，减少开发成本。',
-              'Slider Menu组件',
+              'The component library encapsulates the common components in each system of the group, and abstracts the corresponding business logic. In order to shorten the development time of each system and reduce the development cost.',
+              'Slider Menu',
               [
-                '⽤于厂字型布局的左侧菜单，绑定了集团各平台通⽤用的权限校验逻辑',
-                '实现⽬标节点路径查找，根据URL匹配相应资源节点等方法，并抽象为工具类',
+                'The left menu for layout is bound with the permission verification logic common to all platforms of the group',
+                'Realize the target node path search, match the corresponding resource nodes according to the URL and other methods, and abstract it into a tool class',
               ],
-              'Switch Hotel组件',
+              'Switch Hotel',
               [
-                '用于PMS各系统内搜索相关门店并进行切换，且对⽤户历史选择的门店做了缓存优化。',
-                '⽀持在多⽤用户的场景下缓存各用户历史选择的门店，并在展示时默认将历史选择过的门店在列列表中优先展示。'
+                'It is used to search and switch related stores in various PMS systems, and cache and optimize the stores selected by users in the history.',
+                'Supports caching of historically selected stores by each user in multi-user scenarios, and displays the historically selected stores in the column list by default.'
               ]
             ],
           ]
@@ -289,75 +269,49 @@ export default defineComponent({
     ])
     const historyWorks2 = reactive([
       {
-        name:'天津泰凡科技有限公司',
-        time:'2017.12 - 2019.11',
+        name:'TechFantasy Co., Ltd',
+        time:'Dec 2017 - Nov 2019',
         infoList:[
-          '前端工程师',
-          '主要负责数据可视化研发及MES系统的前端开发',
+          'Front-End Engineer',
+          'Mainly responsible for data visualization research and development and front-end development of MES system',
           [
-            '生产制造智能管理与追溯分析系统',
+            'MES System',
             [
-              '负责工单、采购⼊库、成品出库等模块，在项目中期承担起了项目经理的职责',
-              '制定异常处理机制:在成品出库模块中，由于涉及到多个系统之间的数据流转，在前期设计异常情况处理时遇到了很⼤大的阻碍。后来经过与多方的沟通，制定相应的异常处理机制，该⽅案在实施后赢得了项⽬组和客户的⼀致认可',
-              '编写软著4篇、外观专利1篇、技术专利1篇',
-              '涉及技术栈:',
-              [
-                'Vue2',
-                'VueX',
-                'webpack',
-                'Echarts'
-              ],
+              'Responsible for modules such as work order, procurement warehousing, finished product delivery, etc., and assumed the responsibility of project manager in the middle of the project',
+              'Work with business partners to develop an exception handling mechanism, which has won unanimous approval from the project team and customers after its implementation',
+              'Wrote 4 software work, 1 appearance patent, 1 technical patent',
+              'Technology Stack: Vue2, VueX, Webpack, E-Charts',
             ],
 
-            '气象数据可视化项⽬',
+            'Weather Data Visualization',
             [
-              '使用原生WebGL在二维平⾯上展示风、温、湿、压、雨和污染六要素等常见的气象数据，使用粒⼦动画和⾊斑图作为展示方式，可对接气象领域常见的GRIB数据源。',
-              '调研格点数据解析方法，并将GRIB数据转换为结构化数据',
-              '优化气象数据加载速度，将结构化数据生成为纹理，相比加载JSON数据体积减小8～10倍左右',
-              '涉及技术栈:',
-              [
-                'WebGL',
-                'Vue2',
-                'webpack',
-                'python'
-              ],
+              'Use native WebGL to display common meteorological data such as wind, temperature, humidity, pressure, rain, and pollution on a two-dimensional plane. Use particle animation and color pattern as a display method to connect with common GRIB data sources in the meteorological field.',
+              'Investigate grid data analysis methods and convert GRIB data into structured data',
+              'Optimize the loading speed of meteorological data, generate structured data into textures, and reduce the volume by about 8 to 10 times compared to loading JSON data',
+              'Technology Stack: WebGL, React, Webpack, python',
             ],
 
-            'DataMag 2.0数据可视化平台',
+            'DataMag 2.0 (Visualization platform)',
             [
-              '使用Vue2+E-Charts开发报表展示模块',
-              '抽象各个图表的维度、度量、指标，编写相应的转换函数用于不同类型图表之间的转换',
-              '涉及技术栈:',
-              [
-                'Vue2',
-                'VueX',
-                'E-Charts',
-                'webpack',
-                'ElementUI'
-              ],
+              'Use Vue2 + E-Charts to develop report display module',
+              'Abstract the dimensions, measures, and series of each chart, and write corresponding conversion functions for conversion between different types of charts',
             ]
           ],
         ]
       },
       {
-        name:'其它项目经验',
+        name:'Other Experience',
         infoList:[
-          'Magic Code少儿编程平台',
-          '线上地址: https://www.coding4fun.com.cn',
+          `Magic Code Children's Programming Platform`,
+          'Online: https://www.coding4fun.com.cn',
           [
-            '工作内容:',
+            'Work Content:',
             [
-              '负责该项目的官网平台和Scratch与Minecraft联动部分的开发',
-              '优化ScratchMC功能(Scratch与Minecraft联动的开源项目)时，解决了ScratchMC⽆法建造汉字积木块的问题',
-              '扩展ScratchMC积⽊块的功能'
+              `Responsible for the development of the project's official website platform and the linkage between Scratch and Minecraft`,
+              'When optimizing the ScratchMC function (an open source project linked by Scratch and Minecraft), the problem that ScratchMC cannot build Chinese character blocks is solved',
+              'Extend the functionality of ScratchMC blocks'
             ],
-            '涉及技术栈:',
-            [
-              'Vue2',
-              'nodejs',
-              'css',
-              'html',
-            ]
+            'Technology Stack: React, Redux, Nodejs, Sass',
           ],
         ]
       }
